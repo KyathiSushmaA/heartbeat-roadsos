@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heartbeat RoadSoS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container center-screen">
+    <div class="card hero-card">
+      <div class="pulse-ring"></div>
+      <h1>❤️ Heartbeat RoadSoS</h1>
+      <p>AI-powered emergency response for real-time accident victim monitoring</p>
+      <div class="button-group">
+        <a href="dashboard.html" class="btn btn-primary">Start Monitoring</a>
+        <button class="btn btn-danger" onclick="triggerSOS()">Emergency SOS</button>
+      </div>
+      <p id="status-msg"></p>
+    </div>
+  </main>
+
+  <script>
+    function triggerSOS() {
+      document.getElementById('status-msg').textContent = 'Emergency alert sent to ambulance, hospital & emergency contacts.';
+    }
+  </script>
+</body>
+</html>

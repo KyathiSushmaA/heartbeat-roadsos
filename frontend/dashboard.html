@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoadSoS Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1>Live Health Dashboard</h1>
+      <span class="badge critical">Critical</span>
+    </header>
+
+    <section class="grid">
+      <div class="card metric-card">
+        <h3>❤️ Heart Rate</h3>
+        <p id="heartRate">128 BPM</p>
+      </div>
+
+      <div class="card metric-card">
+        <h3>🫁 SpO₂</h3>
+        <p id="oxygen">89%</p>
+      </div>
+
+      <div class="card metric-card">
+        <h3>📍 Location</h3>
+        <p>Outer Ring Road, Hyderabad</p>
+      </div>
+
+      <div class="card metric-card">
+        <h3>🧠 AI Severity Score</h3>
+        <p>91 / 100</p>
+      </div>
+    </section>
+
+    <section class="card status-card">
+      <h2>Emergency Response</h2>
+      <ul>
+        <li>🚑 Ambulance: En route (ETA 8 mins)</li>
+        <li>🏥 Hospital: Alert received</li>
+        <li>👮 Police: Notified</li>
+        <li>👨‍👩‍👧 Emergency Contact: SMS delivered</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    setInterval(() => {
+      document.getElementById('heartRate').textContent = `${124 + Math.floor(Math.random() * 8)} BPM`;
+      document.getElementById('oxygen').textContent = `${88 + Math.floor(Math.random() * 3)}%`;
+    }, 2500);
+  </script>
+</body>
+</html>
