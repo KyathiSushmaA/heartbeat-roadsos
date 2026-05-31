@@ -1,8 +1,10 @@
-# CardioGuard ❤️
+# ❤️ Heartbeat RoadSOS ❤️ _(Powered by CardioGuard)_
 
 AI-powered emergency response system for road accident victim monitoring.
 
 ## Project Overview
+
+Heartbeat RoadSoS is implemented through CardioGuard, an AI-powered emergency response web application that monitors accident victims in real time.
 
 CardioGuard is built for the National Road Safety Hackathon 2026 under the RoadSoS problem statement.
 
