@@ -75,7 +75,7 @@ Open frontend/index.html using Live Server in VS Code.
 
 ## Team
 
-Team Arikatla
+Team LBK NextGen
 
 ## Hackathon
 
